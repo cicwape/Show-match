@@ -203,9 +203,9 @@
 
         // Initialize the page based on user's registration status
         window.onload = () => {
+            loadParticipants(); // Load and display participants every time the page loads
             if (isUserRegistered()) {
                 hideRegistrationForm();
-                loadParticipants();
             }
         };
     </script>
